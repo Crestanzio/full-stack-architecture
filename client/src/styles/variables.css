@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@300;400&display=swap");
+
+/* Animation Icons: lordicon.com */
+
+:root {
+  /* Colors Pallete hls() */
+
+  --primary--color: 81, 50%, 41%;
+  --secondary-color: 81, 50%, 41%;
+
+  /* State Colors */
+
+  --success-color: 168, 100%, 29%;
+  --warning-color: 102, 100%, 29%;
+  --error-color: 0, 91%, 45%;
+
+  /* Font Colors */
+
+  --header-color: 1, 91%, 45%;
+  --subheader-color: 1, 91%, 45%;
+  --paragraph-color: 1, 91%, 45%;
+  --link-color: 1, 91%, 45%;
+  --info-color: 1, 91%, 45%;
+
+  /* Font-family */
+
+  --primary-font-family: "Source Sans Pro", sans-serif;
+  --secondary-font-family: "Courier New", Courier, monospace;
+
+  /* Font-weight */
+
+  --s-font--weight: lighter;
+  --m-font--weight: normal;
+  --l-font--weight: bold;
+  --xl-font--weight: bolder;
+
+  /* Font-size */
+
+  --gold-ratio: 1.618; /* myltiplie with everythink to get the prefect scale */
+  --xs-font-size: 1em; /* 16px */
+  --s-font-size: 1em * var(--gold-ratio); /* 22px */
+  --m-font-size: 1.375 * var(--gold-ratio); /* 28px */
+  --l-font-size: 1.75em * var(--gold-ratio); /* 34px */
+  --xl-font-size: 2.125em * var(--gold-ratio); /* 40px */
+  --xxl-font-size: 2.5em * var(--gold-ratio); /* 46px */
+  --responsive-font-size: clamp(1rem, 2.5vw, 4rem);
+
+  /* Padding */
+
+  --xs-padding: 0.5rem;
+  --s-padding: 1rem;
+  --m-padding: 1.5rem;
+  --l-padding: 2rem;
+  --xl-padding: 2.5rem;
+
+  /* Margin */
+
+  --xs-margin: 0.5rem;
+  --s-margin: 1rem;
+  --m-margin: 1.5rem;
+  --l-margin: 2rem;
+  --xl-margin: 2.5rem;
+
+  /* Breakpoints */
+
+  --xs-breakpoint: 0;
+  --s-breakpoint: 570px;
+  --m-breakpoint: 780px;
+  --l-breakpoint: 990px;
+  --xl-breakpoint: 1200px;
+  --xxl-breakpoint: 1400px;
+
+  /* Grid Layout */
+}

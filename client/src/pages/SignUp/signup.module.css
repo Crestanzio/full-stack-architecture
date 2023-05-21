@@ -1,0 +1,167 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/************** Form container **************/
+
+form {
+  min-width: 350px;
+  margin: 0 auto;
+  background-color: #e1e1e1;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.content {
+  padding: 15px;
+}
+
+.logo {
+  width: 100%;
+  padding: 30px;
+  background: #23463f;
+}
+
+.logo > img {
+  display: block;
+  max-width: 125px;
+  margin: 0 auto;
+}
+
+/*************** Form container end ***************/
+
+
+/*************** Inputs fields ***************/
+
+input[name="username"],
+input[name="password"] {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #dddddd;
+  outline: none;
+  transition: border-color 0.5s;
+}
+
+input[name="username"]::placeholder,
+input[name="password"]::placeholder {
+  color: #212121;
+}
+
+/*************** Inputs fields end ***************/
+
+
+/*************** Inputs errors vallidation ***************/
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip_error {
+  position: absolute;
+  width: 68%;
+  padding: 7px 0px 7px 10px;
+  background-color: #d33e3e;
+  color: #fff;
+  border-radius: 6px;
+  top: 6px;
+  left: 110%;
+  z-index: 1;
+}
+
+.tooltip_error::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #df6b6b transparent transparent;
+}
+
+.input_error:focus:invalid, .input_error:not(:focus):invalid {
+  border-color: #dd0b0b;
+}
+
+input[name="username"]:focus:valid,
+input[name="password"]:focus:valid {
+  border-color: #009578;
+}
+
+/*************** Inputs errors vallidation ***************/
+
+
+/*************** Buttons ***************/
+
+.content > button {
+  font-weight: bold;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: #009578;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.content > button:active {
+  background-color: #008067;
+}
+
+.content > button:disabled {
+  background-color: #0080678c;
+  cursor: initial;
+}
+
+/*************** Buttons end ***************/
+
+
+/*************** Remember Me Input ***************/
+
+.remember_me {
+  margin: 15px 0px;
+}
+
+.remember_me > input {
+  margin-right: 7px;
+}
+
+/*************** Remember Me Input end ***************/
+
+
+/*************** Text Links ***************/
+
+.links,
+a {
+  margin: 15px 0px;
+}
+
+.links > a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #009578;
+}
+
+/*************** Text Links end ***************/
+
+
+/*************** Toggle password visibility ***************/
+
+input[name="password"] ~ span {
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  right: 4%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+/*************** Toggle password visibility end ***************/

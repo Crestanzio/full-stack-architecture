@@ -1,0 +1,17 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 27px;
+}
+
+section > div {
+  display: flex;
+  gap: 20px
+}
+
+section > div > button {
+  padding: 15px;
+  /* margin-left: 24px; */
+}
